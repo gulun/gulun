@@ -4,7 +4,7 @@
  <title>Emerald | A simple Jekyll blog</title>
  <link href="http://www.jacoporabolini.com/emerald/atom.xml" rel="self"/>
  <id>http://www.jacoporabolini.com/emerald</id>
- <updated>2015-08-18T17:40:50+08:00</updated>
+ <updated>2015-08-18T20:55:02+08:00</updated>
  <author>
    <name>Jacopo Rabolini</name>
    <uri>http://www.jacoporabolini.com</uri>
@@ -18,7 +18,7 @@
    <link href="http://www.jacoporabolini.com/emerald/typography"/>
    <id>http://www.jacoporabolini.com/emerald/typography</id>
    <updated>2015-03-19T00:00:00+08:00</updated>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/emerald/img/img-test.png&quot; alt=&quot;Test&quot; title=&quot;Test&quot; /&gt; Lorem ipsum dolor sit amet, &lt;a href=&quot;http://www.example.com&quot;&gt;consectetur adipisicing&lt;/a&gt; elit. Id, aliquam magni et officiis nemo nihil aliquid placeat alias. Eum voluptates ducimus, nobis ex illum laboriosam quidem corrupti impedit ratione in voluptatum amet beatae facilis temporibus voluptate praesentium voluptatibus! At ab, iusto error amet eveniet...</content>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;../img/img-test.png&quot; alt=&quot;Test&quot; title=&quot;Test&quot; /&gt; Lorem ipsum dolor sit amet, &lt;a href=&quot;http://www.example.com&quot;&gt;consectetur adipisicing&lt;/a&gt; elit. Id, aliquam magni et officiis nemo nihil aliquid placeat alias. Eum voluptates ducimus, nobis ex illum laboriosam quidem corrupti impedit ratione in voluptatum amet beatae facilis temporibus voluptate praesentium voluptatibus! At ab, iusto error amet eveniet...</content>
  </entry>
 
  
