@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Typograhy example
 ---
 ![Test](/emerald/img/img-test.png "Test")
