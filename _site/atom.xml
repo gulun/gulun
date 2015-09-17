@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Emerald | A simple Jekyll blog</title>
+ <link href="http://www.jacoporabolini.com/emerald/atom.xml" rel="self"/>
+ <id>http://www.jacoporabolini.com/emerald</id>
+ <updated>2015-08-20T17:27:05+08:00</updated>
+ <author>
+   <name>Jacopo Rabolini</name>
+   <uri>http://www.jacoporabolini.com</uri>
+   <email>hello@jacoporabolini.com</email>
+ </author>
+
+ 
+
+ <entry>
+   <title>Core Graphics</title>
+   <link href="http://www.jacoporabolini.com/emerald/Gore-Graphics"/>
+   <id>http://www.jacoporabolini.com/emerald/Gore-Graphics</id>
+   <updated>2015-08-18T00:00:00+08:00</updated>
+   <content type="html">&lt;h5 id=&quot;section&quot;&gt;简介&lt;/h5&gt; &lt;ol&gt; &lt;li&gt; &lt;p&gt;Core Graphics 是一组基于C的API框架，使用Quartz作为绘画引擎，提供了低级别、轻量级、高保真度的2D渲染。&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;该框架可以用于基于路径的绘图、变换、颜色管理、脱屏渲染，模板、渐变、遮蔽、图像数据管理、图像的创建、遮罩、以及PDF文档的创建、显示和分析。&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;创建任何界面元素时，iOS 都是用Core Graphics 来将这些元素绘制到窗口中去的。通过实现和重载Core Graphics的方法，可以创建自定义的界面元素。&lt;/p&gt; &lt;/li&gt; &lt;/ol&gt; &lt;h5 id=&quot;quarz-&quot;&gt;与 Quarz 的关系&lt;/h5&gt; &lt;ol&gt; &lt;li&gt; &lt;p&gt;Quartz 2D 是一组二维绘图与渲染引擎，它是Core Graphics Framework 的一部分。Core Graphics 会使用到这组API。&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;Quartz Core 是一组动画引擎，Core Animation 会使用到这组API。&lt;/p&gt; &lt;/li&gt; &lt;/ol&gt; &lt;h5 id=&quot;uikit-&quot;&gt;与 UIKit 的关系&lt;/h5&gt; &lt;ol&gt; &lt;li&gt;UIKit 和 Core...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Typograhy example</title>
+   <link href="http://www.jacoporabolini.com/emerald/typography"/>
+   <id>http://www.jacoporabolini.com/emerald/typography</id>
+   <updated>2015-03-19T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;../img/img-test.png&quot; alt=&quot;Test&quot; title=&quot;Test&quot; /&gt; Lorem ipsum dolor sit amet, &lt;a href=&quot;http://www.example.com&quot;&gt;consectetur adipisicing&lt;/a&gt; elit. Id, aliquam magni et officiis nemo nihil aliquid placeat alias. Eum voluptates ducimus, nobis ex illum laboriosam quidem corrupti impedit ratione in voluptatum amet beatae facilis temporibus voluptate praesentium voluptatibus! At ab, iusto error amet eveniet...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Code Syntax</title>
+   <link href="http://www.jacoporabolini.com/emerald/code-syntax"/>
+   <id>http://www.jacoporabolini.com/emerald/code-syntax</id>
+   <updated>2015-03-01T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;To insert highlight code inside of a post, it’s enough to use some specific tags, has directly described into the &lt;a href=&quot;http://jekyllrb.com/docs/templates/#code-snippet-highlighting&quot;&gt;Jekyll documentation&lt;/a&gt;. In this way the code will be included into a &lt;code&gt;.highlight&lt;/code&gt; CSS class and will be highlight according to the &lt;a href=&quot;https://github.com/mojombo/tpw/blob/master/css/syntax.css&quot;&gt;syntax.scss&lt;/a&gt; file. This is the standard...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Example 8</title>
+   <link href="http://www.jacoporabolini.com/emerald/example-8"/>
+   <id>http://www.jacoporabolini.com/emerald/example-8</id>
+   <updated>2015-02-15T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Example 7</title>
+   <link href="http://www.jacoporabolini.com/emerald/example-7"/>
+   <id>http://www.jacoporabolini.com/emerald/example-7</id>
+   <updated>2015-02-15T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Example 6</title>
+   <link href="http://www.jacoporabolini.com/emerald/example-6"/>
+   <id>http://www.jacoporabolini.com/emerald/example-6</id>
+   <updated>2015-02-15T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Example 5</title>
+   <link href="http://www.jacoporabolini.com/emerald/example-5"/>
+   <id>http://www.jacoporabolini.com/emerald/example-5</id>
+   <updated>2015-02-15T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Example 4</title>
+   <link href="http://www.jacoporabolini.com/emerald/example-4"/>
+   <id>http://www.jacoporabolini.com/emerald/example-4</id>
+   <updated>2015-02-15T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Example 3</title>
+   <link href="http://www.jacoporabolini.com/emerald/example-3"/>
+   <id>http://www.jacoporabolini.com/emerald/example-3</id>
+   <updated>2015-02-15T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Example 2</title>
+   <link href="http://www.jacoporabolini.com/emerald/example-2"/>
+   <id>http://www.jacoporabolini.com/emerald/example-2</id>
+   <updated>2015-02-15T00:00:00+08:00</updated>
+   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est optio ut impedit architecto iusto tempore rem, voluptates sed magni nisi corrupti praesentium voluptatum harum expedita temporibus ipsam, odit ad distinctio! Labore cupiditate distinctio facere earum, iste! Reiciendis possimus voluptatum explicabo corporis ab. Ex adipisci laudantium mollitia vel optio deserunt...</content>
+ </entry>
+
+ 
+
+</feed>

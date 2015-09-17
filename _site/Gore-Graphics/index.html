@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="generator" content="Jekyll">
+
+	<title>Core Graphics</title>
+
+	<!-- CSS & fonts -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic%7CSignika:700,300,400,600' rel='stylesheet' type='text/css'>
+
+	<!-- RSS -->
+	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
+
+</head>
+
+
+<body>
+	<div id="wrap">
+	  	
+	  	<!-- Navigation -->
+	  	<nav id="nav">
+	<div id="nav-list">
+		<a href="/">Home</a>
+
+		<!-- Nav pages -->
+	  
+	    
+	      <a href="/about.html" title="About Emerald">About Emerald</a>
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+    
+    <!-- Nav links -->
+	  <a href="http://www.renren.com/230503701/profile">My Space</a>
+<a href="https://github.com/gulun">Project on Github</a>
+
+	</div>
+  
+  <!-- Nav footer -->
+	
+	  <footer>
+	
+	<span>version 1.1.0</span>
+
+</footer>
+	
+
+</nav>
+
+    
+    <!-- Icon menu -->
+	  <a href="#" id="nav-menu">
+	  	<div id="menu"></div>
+	  </a>
+
+      <!-- Header -->
+      
+        <header id="header">
+	<a href="/">
+		<img src="/img/gulun_logo.png" alt="Emerald Logo">
+	  <h1>gulun</h1>
+	</a>
+</header>
+
+      
+
+    <!-- Main content -->
+	  <div id="container">
+		  
+		<main>
+
+			<article id="post-page">
+	<h2>Core Graphics</h2>		
+	<time datetime="2015-08-18T00:00:00+08:00" class="by-line">18 Aug 2015</time>
+	<div class="content">
+
+		<h5 id="section">简介</h5>
+
+<ol>
+  <li>
+    <p>Core Graphics 是一组基于C的API框架，使用Quartz作为绘画引擎，提供了低级别、轻量级、高保真度的2D渲染。</p>
+  </li>
+  <li>
+    <p>该框架可以用于基于路径的绘图、变换、颜色管理、脱屏渲染，模板、渐变、遮蔽、图像数据管理、图像的创建、遮罩、以及PDF文档的创建、显示和分析。</p>
+  </li>
+  <li>
+    <p>创建任何界面元素时，iOS 都是用Core Graphics 来将这些元素绘制到窗口中去的。通过实现和重载Core Graphics的方法，可以创建自定义的界面元素。</p>
+  </li>
+</ol>
+
+<h5 id="quarz-">与 Quarz 的关系</h5>
+<ol>
+  <li>
+    <p>Quartz 2D 是一组二维绘图与渲染引擎，它是Core Graphics Framework 的一部分。Core Graphics 会使用到这组API。</p>
+  </li>
+  <li>
+    <p>Quartz Core 是一组动画引擎，Core Animation 会使用到这组API。</p>
+  </li>
+</ol>
+
+<h5 id="uikit-">与 UIKit 的关系</h5>
+<ol>
+  <li>UIKit 和 Core Graphics 都是cocoa框架提供的绘图API。</li>
+  <li>UIKit 构建于Core Graphics 之上，能够通过简单的方法使用Core Graphics的大量功能。</li>
+  <li>UIKit 可以和Core Graphics无缝的协同工作。</li>
+  <li>Core Graphics 是iOS上所有绘图工作的基石，包括UIKit。</li>
+</ol>
+
+<h5 id="context">图像上下文  Context</h5>
+<ol>
+  <li>类似于画家的画布，承载绘画的动作。</li>
+  <li>绘画动作顺序执行，新动作在前一个动作的基础上完成。</li>
+  <li>在图形上下文之外，是无法进行绘图操作的。<br />
+虽然可以自己创建一个图形上下文，但是这样做的效率很低（非万不得已不要用）。基本上用于对图片的处理。</li>
+</ol>
+
+<h5 id="section-1">图形上下文的属性</h5>
+<ul>
+  <li>路径 path</li>
+  <li>阴影 shadow</li>
+  <li>笔画 stroke</li>
+  <li>剪裁路径 clip path</li>
+  <li>线条粗细 line width</li>
+  <li>混合模式 blend mode</li>
+  <li>填充色 fill color</li>
+  <li>当前形变矩阵 current transform matrix</li>
+  <li>线条图案 line dash</li>
+</ul>
+
+<p>属性是状态相关的，改变属性会影响所有的后续操作。</p>
+
+<h5 id="section-2">图形上下文栈</h5>
+<pre><code>UIGraphicsPushContext(ctx) //将ctx设置为当前上下文（栈顶）
+UIGraphicsPopContext() //将ctx还原，
+
+CGContextSaveGState(context) //将图形上下文的当前状态保存
+CGContextRestoreGState(context) //将图形上下文状态恢复
+</code></pre>
+
+<ol>
+  <li>图形上下文context是以堆栈的形式存放。</li>
+  <li>只有在当前的context上绘图才有效。</li>
+  <li>UIKit 只会对当前上下文栈顶的context进行操作，所以需要注意当前栈顶的context是否是你需要操作的上下文</li>
+</ol>
+
+<h5 id="section-3">使用场景</h5>
+<p>用Core Graphics来绘图的一个通常原因就是只是用图片或是图层效果不能轻易地绘制出矢量图形</p>
+
+<ul>
+  <li>任意多边形 （不仅仅是矩形）</li>
+  <li>曲线、斜线</li>
+  <li>文本</li>
+  <li>渐变</li>
+</ul>
+
+<h5 id="section-4">使用方式</h5>
+<p>三个场景，其中每个场景有两种方法绘图（UIKit &amp; CoreGraphics）</p>
+
+<ul>
+  <li>
+    <p>2种方法绘图<br />
+使用UIKit在context上绘制，UIKit 只会对当前上下文栈顶的context进行操作<br />
+使用Core Graphics 函数在 context上绘制，Core Graphics 函数需要把context作为参数，只绘制在指定使用的context。</p>
+  </li>
+  <li>
+    <p>3种场景</p>
+    <ol>
+      <li>
+        <p>drawRect</p>
+      </li>
+      <li>
+        <p>CALayer delegate: - (void)drawLayer:(CALayer *)layer 
+inContext:(CGContextRef )ctx</p>
+      </li>
+      <li>
+        <p>自己创建context来绘制，通常用于对图片的处理。</p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h5 id="section-5">绘图步骤</h5>
+<ol>
+  <li>获取上下文（画布）</li>
+  <li>创建路径（自定义或者调用系统的API）并添加到上下文中。</li>
+  <li>进行绘图内容的设置（画笔颜色、粗细、填充区域颜色、阴影、连接点形状等）</li>
+  <li>开始绘图（CGContextDrawPath）</li>
+  <li>释放路径（CGPathRelease）</li>
+</ol>
+
+<h5 id="cgcontextdrawpath">关于 CGContextDrawPath</h5>
+
+<p>CGContextDrawPath  两个 参数 决定填充规则</p>
+
+<ol>
+  <li>kCGPathFill表示用非零绕数规则，</li>
+  <li>kCGPathEOFill表示用奇偶规则，</li>
+  <li>kCGPathFillStroke     表示填充，</li>
+  <li>kCGPathEOFillStroke   表示描线，不是填充</li>
+</ol>
+
+<p>或者</p>
+
+<ol>
+  <li>CGContextFillPath 
+  使用非零绕数规则填充当前路径</li>
+  <li>CGContextEOFillPath 
+  使用奇偶规则填充当前路径</li>
+  <li>CGContextStrokePath
+  使用非零绕数描线</li>
+  <li>CGContextFillRect 
+  填充指定的矩形</li>
+  <li>CGContextFillRects 
+  填充指定的一些矩形</li>
+  <li>CGContextFillEllipseInRe ct 
+  填充指定矩形中的椭圆</li>
+</ol>
+
+
+		
+	</div>
+</article>
+
+
+
+	  </main>
+		
+		  <!-- Pagination links -->
+      
+
+	  </div>
+	    
+	    <!-- Footer -->
+	    <footer><span>@2015 - lishuai</span></footer>
+
+	    <!-- Script -->
+      <script src="/js/main.js"></script>	
+
+
+	</div>
+</body>
+</html>
